@@ -15,6 +15,7 @@
 @import 'blocks/forms';
 @import 'blocks/carousel';
 @import 'blocks/catalog';
+@import 'blocks/comments';
 
 @media (max-width: 992px) {
     .container {
@@ -67,21 +68,198 @@
     }
     
     .title {
-        &_left {
-            font-size: 30px;
-        }
+        font-size: 26px;
     }
 
     .consultation {
         min-height: 570px;
-        padding: 60px 0 66px 0;
+        padding: 60px 0 66px 65px;
     }
     
+    .catalog {
+        &__tab {
+            width: 200px;
+        }
+        &__content_active {
+            justify-content: space-evenly;
+        }
+    }
 
+    .comments {
+        &__photo {
+            width: 160px;
+            height: 160px;
+        }
+        .comment {
+            &__tekst {
+                font-size: 15px;
+            }
+        }
+    }
 }
-    
 
 
 @media (max-width: 768px) {
+    .catalog {
+        &__tab {
+            width: 160px;
+            font-size: 16px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+    .button {
+        &_main {
+            width: 260px;
+            height: 45px;
+        }
+    }
+    .advantages {
+        padding: 58px 30px 56px 30px;
+        &__wrapper {
+            display: initial;
+        }
+        &__item {
+            width: unset;
+        }
+        &__item:first-of-type,
+        &__item:last-of-type {
+            padding-left: 33px;
+            padding-right: 33px;
+        }
+    }
+    .promo {
+        &__link {
+            margin-bottom: 30px;
+        }
+    }
+    .carousel {
+        &__inner {
+            max-width: 500px;
+        }
+    }
+    .comments {
+        padding: 35px 35px 0 30px;
+        &__photo {
+            height: 120px;
+        }
+    }
+    .comments__wrapper .comment {
+        padding-left: 40px;
+        &__tekst {
+            font-size: 14px;
+        }
+    }
+}
 
+@media (max-width: 576px) {
+    .promo {
+        &__wrapper {
+            margin-top: 50px;
+        }
+        &__header {
+            font-size: 22px;
+        }
+        &__icon {
+            width: unset;
+            font-size: 12px;
+        }
+        &__icons {
+            width: auto;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+    .button {
+        &_main {
+            width: 197px;
+            height: 38px;
+            font-size: 12px;
+        }
+    }
+    .consultation {
+        padding: 40px 0 50px 35px;
+        min-height: unset;
+        &__descr {
+            font-size: 16px;
+        }
+    }
+    .title {
+        font-size: 20px;
+    }
+    .feed-form input {
+        height: 42px;
+        font-size: 13px;
+    }
+    .button {
+        &_submit {
+            height: 44px;
+            font-size: 14px;
+        }
+        &_mini {
+            height: 38px;
+            font-size: 13px;
+        }
+    }
+    .carousel {
+        &__inner {
+            max-width: 90%;
+        }
+    }
+    .catalog {
+        padding: 24px 0 32px;
+        &__tabs {
+            margin-top: 30px;
+        }
+        &__tab {
+            width: 110px;
+            font-size: 11px;
+            height: 36px;
+            line-height: 34px;
+        }
+        &-item {
+            min-height: unset;
+            &__img {
+                height: 170px;
+            }
+            &__subtitle {
+                margin-top: 14px;
+                font-size: 15px;
+            }
+            &__descr {
+                margin-top: 3px;
+                font-size: 14px;
+            }
+            &__price {
+                font-size: 18px;
+            }
+        }
+    }
+    .comments {
+        padding: 35px 35px 30px 30px;
+        &__photo {
+            height: 60px;
+        }
+        &__wrapper {
+            padding-top: 45px;
+        }  
+        .comment {
+            padding-left: 23px;
+            &__name {
+                font-size: 14px;
+            }
+            &__marafon {
+                font-size: 12px;
+            }
+            &__tekst {
+                font-size: 12px;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }

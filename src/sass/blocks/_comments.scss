@@ -1,0 +1,35 @@
+.comments {
+    background-color: #F6F6F6;
+
+    &__wrapper {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: row;
+        .comment {
+            padding-left: 70px;
+            &__name {
+                color: #0D0D0D;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            &__marafon {
+                padding-bottom: 10px;
+                color: #646464;
+                font-size: 14px;
+                font-weight: 300;
+            }
+            &__tekst {
+                color: #0D0D0D;
+                font-size: 18px;
+                font-weight: 300;
+                br {
+                    height: 5px;
+                }
+            }
+        }
+    }
+    &__photo {
+        height: 179px;
+        width: 179px;
+    }
+}
