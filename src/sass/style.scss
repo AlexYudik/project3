@@ -1,4 +1,5 @@
 @import 'base/variables';
+@import 'base/animation';
 *{
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
@@ -16,6 +17,9 @@
 @import 'blocks/carousel';
 @import 'blocks/catalog';
 @import 'blocks/comments';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/pageup';
 
 @media (max-width: 992px) {
     .container {
@@ -96,10 +100,21 @@
             }
         }
     }
+    .footer {
+        &__info {
+            width: 55%;
+            padding: 40px 15px 10px 15px;
+        }
+    }
 }
 
 
 @media (max-width: 768px) {
+    .header {
+        &__official {
+            display: none;
+        }
+    }
     .catalog {
         &__tab {
             width: 160px;
@@ -153,7 +168,21 @@
 }
 
 @media (max-width: 576px) {
+    .header {
+        &__logo {
+            width: 150px;
+        }
+        &__phone {
+            font-size: 14px;
+        }
+        & button {
+            font-size: 11px;
+            width: 125px;
+        }
+    }
     .promo {
+        padding-left: 40px;
+        padding-right: 40px;
         &__wrapper {
             margin-top: 50px;
         }
@@ -163,6 +192,7 @@
         &__icon {
             width: unset;
             font-size: 12px;
+            margin: 0 8px;
         }
         &__icons {
             width: auto;
@@ -260,6 +290,32 @@
                     margin-bottom: 0;
                 }
             }
+        }
+    }
+    .footer {
+        &__info {
+            width: 70%;
+            padding: 25px 15px;
+            height: unset;
+        }
+        &__addr {
+            font-size: 16px;
+        }
+        &__phone {
+            font-size: 18px;
+        }
+        &__social-item {
+            img {
+                height: 43px;
+            }
+        }
+    }
+    .modal {
+        &__close {
+            top: 7px;
+            right: 10px;
+            font-size: 40px;
+        
         }
     }
 }

@@ -30,7 +30,11 @@
         justify-content: space-between;
     }
     &__icon {
+        margin: 0 10px;
         width: 108px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         text-align: center;
         color: #ffffff;
         font-size: 14px;
