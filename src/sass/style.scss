@@ -1,3 +1,8 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/slick';
+@import 'libs/font';
+@import 'libs/animate';
+
 @import 'base/variables';
 @import 'base/animation';
 *{
@@ -51,6 +56,7 @@
         &__phone {
             font-size: 16px;
         }
+
     }
 
     .button {
